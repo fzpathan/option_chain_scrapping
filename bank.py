@@ -9,8 +9,8 @@ warnings.filterwarnings('ignore')
 import sqlalchemy
 import math
 
-BOT_TOKEN = "2042514901:AAHZkg3NyCMix_ThkEM5Tn6b4QX-h3QCoB0"
-BOT_ID = "-764683952"
+BOT_TOKEN = ""
+BOT_ID = ""
 url_oc = "https://www.nseindia.com/option-chain"
 url_indices = "https://www.nseindia.com/api/allIndices"
 import logging
