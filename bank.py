@@ -4,7 +4,6 @@ import requests
 import json
 import time
 import warnings
-from smartapi import SmartConnect
 warnings.filterwarnings('ignore')
 import sqlalchemy
 import math
