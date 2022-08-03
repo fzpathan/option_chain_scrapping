@@ -88,14 +88,10 @@ def transform_option_chain(engine,a,b):
 
         ce = (a1-a)/a1 *100
         pe = (b1-b)/b1 * 100
-        if ce<0 and abs(ce)>15:
+        if ce<0 and abs(ce)>25:
             telegram_bot_sendtext(f'N-SC in CALL {round(ce,2)} %')
-        if pe < 0 and abs(pe) > 15:
+        if pe < 0 and abs(pe) > 25:
             telegram_bot_sendtext(f'N-SC in PUT {round(pe,2)} %')
-        if 20 <pe < 70:
-            telegram_bot_sendtext(f'N-OI in PUT {round(pe,2)} %')
-        if 20 <ce < 70:
-            telegram_bot_sendtext(f'N-OI in CALL {round(pe,2)} %')
         logging.info(f'CE -- {a1}, PE --{b1} '
               f'%CE -- {ce}, %PE--{pe} {datetime.datetime.now()}')
         print(f'CE -- {a1}, PE --{b1} '
